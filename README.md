@@ -129,3 +129,36 @@ For detailed instructions, refer to Google's documentation on [OAuth 2.0](https:
 <div align="center">
     <h3>========Thank You !!!=========</h3>
 </div>
+
+
+## Facebook login configuration
+```text
+Configure Facebook Developer Console
+Now we have to do only one thing. Let’s set up Facebook Developer Account. I recommend you watch the video after 19:42. The video is here.
+
+Search Facebook for developers or Meta for developers
+Click on Get started
+Make sure you have an active Facebook account.
+Register your app by clicking continue.
+Add your details like phone, and email. Click continue
+Select student or developer and complete your registration.
+Click on create an app
+Select consumer and click on continue.
+Display name: “Test App”
+Enter your Facebook password and create your app
+Click settings -> Basic
+App domains: localhost
+Privacy policy URL: http://example.com/
+Data deletion URL: https://example.com/
+Click on save changes
+Scroll down and click on Add platform
+Select the website and click on next
+Site URL: http://localhost:8081/
+Click on save changes
+Copy the client app id and client app secret and past it here
+```
+
+```text
+SOCIAL_AUTH_FACEBOOK_KEY = "#############"
+SOCIAL_AUTH_FACEBOOK_SECRET = "############"
+```

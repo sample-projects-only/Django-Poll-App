@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.google.GoogleOAuth2',
     'django.contrib.auth.backends.ModelBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
 )
 
 MIDDLEWARE = [
@@ -55,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'pollme.urls'
@@ -136,3 +138,13 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_KEY =  '1593624939-r3f5df0kmi02lujgcfqu7v3ti15j2694.ap
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET ='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'
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/polls/list/user/'
+
+
+
+
+SOCIAL_AUTH_FACEBOOK_KEY = "7422345121183141"
+SOCIAL_AUTH_FACEBOOK_SECRET = "911ca4c9b4f79d158193cf482477869e"
+LOGIN_REDIRECT_URL = '/polls/list/user/'
+SOCIAL_AUTH_FACEBOOK_SCOPE = [
+    'email',
+]
