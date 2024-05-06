@@ -134,7 +134,7 @@ For detailed instructions, refer to Google's documentation on [OAuth 2.0](https:
 ## Facebook login configuration
 ```text
 Configure Facebook Developer Console
-Now we have to do only one thing. Let’s set up Facebook Developer Account. I recommend you watch the video after 19:42. The video is here.
+Now we have to do only one thing. Let’s set up Facebook Developer Account.  
 
 Search Facebook for developers or Meta for developers
 Click on Get started
